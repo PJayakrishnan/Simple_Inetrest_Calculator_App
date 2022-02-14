@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp1.MainPage">
+    <StackLayout BackgroundColor="#7a9e9f">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.8*"/>
+                <RowDefinition Height=".4*"/>
+                <RowDefinition Height=".7*"/>
+                <RowDefinition Height=".4*"/>
+                <RowDefinition Height=".7*"/>
+                <RowDefinition Height=".4*"/>
+                <RowDefinition Height=".7*"/>
+                <RowDefinition Height=".2*"/>
+                <RowDefinition Height=".2*"/>
+                <RowDefinition Height=".7*"/>
+                <RowDefinition Height=".4*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".5*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width=".5*"/>
+            </Grid.ColumnDefinitions>
+            <Frame BackgroundColor="#03dac5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6"/>
+            <Label Text="Simple Interest Calculator" FontFamily="Comfortaa" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="40" Grid.ColumnSpan="6" FontAttributes="Bold" TextType="Text"/>
+            <Frame CornerRadius="15"  BackgroundColor="LightGoldenrodYellow" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4"/>
+            <Entry Grid.Row="2" FontFamily="cutive_mono" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="principleAmount" Grid.Column="2" Grid.ColumnSpan="2" Placeholder="Principle Amt"/>
+            <Frame CornerRadius="15"  BackgroundColor="LightGoldenrodYellow" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"/>
+            <Entry Grid.Row="4" FontFamily="cutive_mono" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="interestRate" Grid.Column="1" Grid.ColumnSpan="2" Placeholder="Interest rate"/>
+            <Frame CornerRadius="15"  BackgroundColor="LightGoldenrodYellow" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2"/>
+            <Entry Grid.Row="4" FontFamily="cutive_mono" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="noOfYears" Grid.Column="3" Grid.ColumnSpan="2" Placeholder="No. of years"/>
+            <Button Text="Calculate" Clicked="HandleOnClick" FontSize="20" FontAttributes="None" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" BackgroundColor="#03dac5" CornerRadius="15"/>
+            <Button Text="Clear" Clicked="HandleClearOnClick" FontSize="15" FontAttributes="None" Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="1" BorderColor="black" BorderWidth="3" TextColor="White" BackgroundColor="#6200ee" CornerRadius="15"/>
+            <Frame CornerRadius="15"  BackgroundColor="LightGoldenrodYellow" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+            <Label FontFamily="cutive_mono" Text="Interest Amt" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" FontAttributes="None" TextType="Text"/>
+            <Label x:Name="interestLabel" HorizontalTextAlignment="Center" TextColor="Red" FontSize="25" VerticalTextAlignment="center" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <Frame CornerRadius="15"  BackgroundColor="LightGoldenrodYellow" Grid.Column="3" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+            <Label FontFamily="cutive_mono" Text="Total Amt" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="2" FontAttributes="None" TextType="Text"/>
+            <Label x:Name="amountLabel" HorizontalTextAlignment="Center" TextColor="Red" FontSize="25" VerticalTextAlignment="center" Grid.Row="9" Grid.Column="3" Grid.ColumnSpan="2"/>
+        </Grid>
+
+    </StackLayout>
+    
+</ContentPage>
